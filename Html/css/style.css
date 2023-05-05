@@ -1,0 +1,263 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to top, rgb(213, 206, 206) 0%, rgb(255, 255, 255) 100%);
+}
+main h3,h2, p{
+    text-align: center;
+}
+.sombra{
+    margin-top: -25px;
+    background-color: white;
+    -webkit-box-shadow: 0px 27px 90px -10px rgba(0,0,0,0.27);
+    -moz-box-shadow: 0px 27px 90px -10px rgba(0,0,0,0.27);
+    box-shadow: 0px 27px 90px -10px rgba(0,0,0,0.27);
+}
+.sombra h2{
+    font-size: 3rem;
+}
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    height: 18px;
+}
+.titulodos{
+
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/*  0D1450 */
+.barra-nav-cont{
+    background-color: rgb(52, 34, 129);
+}
+.barra-nav{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-nav a{
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+.barra-nav a:hover{
+    background-color: rgb(255, 174, 0);
+    color: black;
+}
+.hero{
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+.contenedor-hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+.cont-acomodar{
+    margin-top: -30px;
+    line-height: 2rem;
+    
+}
+.mov{
+    margin-left: 25px;
+}
+.boton{
+    background-color: rgb(52, 34, 129);
+    margin-left: 25px;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 7px;
+    width: 100px;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0)
+}
+.servicio h3{
+    color: rgb(52, 34, 129);
+    font-weight: 500;
+}
+.servicio p{
+    line-height: 20px;
+
+}
+.servicio .iconos{
+    color: white;
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(52, 34, 129);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 5px;
+    margin-top: -10px;
+    margin-right: 1rem;
+    height: 50rem;
+
+    
+}
+.barra-nav-cont .servicios {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;    
+}
+.formulario{
+    background-color: rgb(133, 132, 132);
+    width: min(90rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    font-family: 'Playfair Display', serif;
+    color: rgb(52, 34, 129);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.campos{
+    margin-bottom: 10px;
+}
+
+.campos label{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 1.5rem;
+    
+}
+.campos textarea{
+    height: 15rem;
+}
+.bot{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 960px){
+    .titulodos{
+        color: white;
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        margin-left: -170px;
+
+    }
+    .servicios{
+        width: 100rem;
+    }
+
+    
+    .cont-acomodar{
+        width: 350px;
+    }
+    
+
+}
+@media (max-width: 750px){
+    .barra-nav {
+        flex-direction: column;
+        align-items: center;    
+    }     
+    .cont-camp{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 1rem;
+        grid-template-rows: auto auto 20rem;
+    }
+    .campos:nth-child(3){
+        grid-column: 1/3;
+    }
+    .campos:nth-child(4){
+        grid-column: 1/3;
+    }
+    .barra-nav a:hover{
+        display: block;
+    }
+    .cont-acomodar{
+        width: 200px;
+    }
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .servicio{
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+
+
+}
+
+  
+
