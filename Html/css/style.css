@@ -2,6 +2,7 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
+    background-color: white;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -24,13 +25,17 @@ main h3,h2, p{
 .sombra h2{
     font-size: 3rem;
 }
+
 .titulo {
     text-align: center;
     font-size: 3rem;
-    height: 18px;
+    height: 100%;
 }
 .titulodos{
-
+    
+    text-align: center;
+    width: 50%;
+    height: 100%;
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 45px;
@@ -64,16 +69,19 @@ main h3,h2, p{
     background-image: url(../img/fondo2.jpg);
     background-size: cover;
     height: 350px;
-    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+
+    
+    
 }
 
 .contenedor-hero{
-    position: absolute;
-    width: 100%;
+ 
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 500px;
+    
 
 }
 .cont-acomodar{
@@ -82,11 +90,17 @@ main h3,h2, p{
     
 }
 .mov{
-    margin-left: 25px;
+    text-align: center;
 }
+.b{
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .boton{
+    
     background-color: rgb(52, 34, 129);
-    margin-left: 25px;
     font-family: 'Roboto Slab', serif;
     text-decoration: none;
     color: white;
@@ -94,8 +108,11 @@ main h3,h2, p{
     padding-left: 10px;
     padding-bottom: 10px;
     padding-right: 7px;
-    width: 100px;
     border: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+   
 }
 .boton:hover{
     cursor: pointer;
@@ -191,9 +208,14 @@ main h3,h2, p{
         color: white;
         font-family: 'Playfair Display', serif;
         font-size: 30px;
-        margin-left: -170px;
 
     }
+    
+    .hero{
+
+        height: 100%;
+    }
+    
     .servicios{
         width: 100%;
     }
@@ -213,6 +235,9 @@ main h3,h2, p{
 
 }
 @media (max-width: 750px){
+    .titulodos{
+        width: 100%;
+    }
     .barra-nav {
         flex-direction: column;
         align-items: center;    
@@ -247,9 +272,20 @@ main h3,h2, p{
         display: flex;
         width: 100%;
     }
+   
+    .contenedor-hero{
+        width: 100%;
+        align-items: center;
+    }
+
 
 
 }
+@media (max-width: 355px){
 
-  
+    .contenedor-hero{
+        margin-top: -20px;
+    }
+    
 
+ }
