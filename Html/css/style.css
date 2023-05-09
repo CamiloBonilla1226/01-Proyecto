@@ -105,7 +105,8 @@ main h3,h2, p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid rgb(0, 0, 0)
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
 }
 .servicio h3{
     color: rgb(52, 34, 129);
@@ -132,7 +133,7 @@ main h3,h2, p{
     column-gap: 5px;
     margin-top: -10px;
     margin-right: 1rem;
-    height: 50rem;
+    width: 100%;
 
     
 }
@@ -185,22 +186,6 @@ main h3,h2, p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 960px){
     .titulodos{
         color: white;
@@ -210,13 +195,20 @@ main h3,h2, p{
 
     }
     .servicios{
-        width: 100rem;
+        width: 100%;
     }
 
     
     .cont-acomodar{
-        width: 350px;
+        width: 100%;
     }
+    .bot{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    
     
 
 }
